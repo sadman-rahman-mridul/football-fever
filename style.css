@@ -31,6 +31,7 @@ body {
     margin-top: 150px;
     margin-left: 130px;
 }
+
 /* Watch LIVE Button Styles  */
 .webtittle a {
     width: 168px;
@@ -42,11 +43,27 @@ body {
     text-decoration: none;
     color: white;
     padding: 10px 24px;
+    transition: all .7s;
+    
 }
-/* Button Hover Effect  */
+/* Button Animation  */
+.webtittle a span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.webtittle a span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
 .webtittle a:hover {
     color: #E02C6D;
     background-color:white;
+    padding-right: 25px;
 }
 
 /* banner image  */
